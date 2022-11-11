@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "SVtHKhnPg+qwtLmA4kZc/zY0a2smV2KELh1S8KeAmczDS1OM8NEX9bEyJr1thelLVp8hZhId6WuVnV1vduNzug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ssem5\\OneDrive - ViaUC\\Semester 3\\DNP 1\\Workspace\\Posti1\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ssem5\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
+    "C:\\Users\\ssem5\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\microsoft.aspnetcore.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\ssem5\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\ssem5\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\ssem5\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\ssem5\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\ssem5\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "username": "string",
+      "nickname": "string",
+      "password": "string",
+      "Role": "User"
+    }
+  ],
+  "Posts": []
+}

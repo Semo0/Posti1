@@ -1,0 +1,88 @@
+﻿@page "/Posts"
+@using model.Models
+@using HttpClient
+@using System.Security.Claims
+@inject IPostService sevice;
+<h3>Posts</h3>
+
+     
+ 
+ 
+ <div>
+     <button @onclick="LoadPosts">Refresh</button>
+ </div>
+ @if (posts == null)
+ {
+     
+ }
+ else if (!posts.Any())
+ {
+     <p>No Posts to display</p>
+ }
+ else
+ {
+     <table class="table">
+         <thead>
+         <tr>
+             <th>Post ID</th>
+             <th>Owner</th>
+             <th>Title</th>
+            
+         </tr>
+         </thead>
+         <tbody>
+         @foreach (var item in posts)
+         {
+             <tr>
+                 
+                 <td>@item.Id</td>
+                 <td>@item.Owner</td>
+                 <td>@item.Tittel</td>
+                 <td>
+                 <a class="col-md-offset-1 cross_icon gridneed_icon"  style="text-decoration: none" data-toggle="modal" href="/postGetter">See More</a></td>
+
+             </tr>
+         }
+         </tbody>
+     </table>
+ }
+ @if (!string.IsNullOrEmpty(Msg))
+ {
+     <label style="color: red"> @Msg</label>
+
+@code {
+    private ICollection<Post> posts;
+    private string Msg = "";
+    private string Color = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        Msg = "";
+        try
+        {
+            await LoadPosts();
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            Msg = e.Message;
+        }
+
+    }
+
+    private async Task LoadPosts()
+    {
+        try
+        {
+            posts = await sevice.getAsync();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            Msg = e.Message;
+        }
+    }
+
+}
+ }
